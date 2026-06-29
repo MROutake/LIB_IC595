@@ -1,0 +1,13 @@
+{
+  "name": "IC595_Module",
+  "version": "1.0.0",
+  "description": "A module for handling IC595 shift registers",
+  "keywords": "IC595, shift register, serial to parallel",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/MROutake/LIB_IC595.git"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
