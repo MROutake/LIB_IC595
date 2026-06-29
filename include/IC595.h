@@ -1,25 +1,18 @@
 #pragma once
 
-# include <Arduino.h>
+#include <Arduino.h>
 
 class IC595 {
-
-
-public: 
+public:
     IC595();
 
-    bool begin(int SHIFT_CLK_PIN, int STORAGE_CLK_PIN,int ENABLE_PIN, int DATA_PIN);
-    bool setData( uint32_t bitmask, uint8_t length);
-    
-
+    bool begin(int shiftClkPin, int storageClkPin, int enablePin, int dataPin, int masterResetPin);
+    bool setData(uint32_t bitmask, uint8_t length, int delay_ms);
 
 private:
-
-
-    int _SHIFT_CLK_PIN;
-    int _STORAGE_CLK_PIN;
-    int _ENABLE_PIN;
-    int _DATA_PIN;
-    int _MASTER_RESET_PIN;
-
-
+    int _shiftClkPin;
+    int _storageClkPin;
+    int _enablePin;
+    int _dataPin;
+    int _masterResetPin;
+};
